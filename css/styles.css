@@ -1,0 +1,72 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the header and navigation */
+header {
+    background-color: #654321;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styles for the content */
+.content {
+    padding: 20px;
+    margin-top: 50px; /* Ensure content doesn't get covered by the fixed header */
+}
+.header-image {
+    width: 100%; /* 图片宽度占满页面 */
+    height: calc(100vh / 3); /* 图片高度为页面高度的三分之一 */
+    object-fit: cover; /* 让图片按比例填充 */
+}
+p {
+    text-indent: 2em; /* 使用em单位来设置缩进，2em表示两个空格 */
+}
+
+/* 添加标题后的分割线样式 */
+h1:after, h2:after, h3:after, h4:after, h5:after, h6:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #000; /* 设置分割线颜色 */
+    margin-top: 10px; /* 设置分割线与标题之间的距离 */
+}
+
+/* 九宫格布局样式 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 三列等宽 */
+    gap: 20px; /* 间距 */
+    margin: 20px; /* 图片和文字离页面边缘的距离 */
+}
+
+.grid-item {
+    text-align: center; /* 图片和文字居中 */
+}
+
+.grid-item img {
+    width: 100%; /* 图片宽度占满父容器 */
+    height: auto; /* 保持图片原始高宽比 */
+}
+.grid-item p {
+    text-align: justify; /*文字两端对齐*/
+}
+

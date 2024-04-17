@@ -1,0 +1,47 @@
+/* 主体内容样式 */
+.content-container {
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 顶部图片样式 */
+.top-image {
+    width: 100%;
+    height: calc(33.33vh - 40px); /* 图片高度占屏幕高度的1/3减去顶部和底部内边距的值 */
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.top-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* 四行两列的表格样式 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+    
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    max-width: 500px; /* 控制表格的最大宽度 */
+    width: 100%;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+}
